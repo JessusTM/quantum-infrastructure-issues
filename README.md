@@ -26,7 +26,8 @@
   </p>
 </div>
 
-**Version 0.1.0**
+> Version: 0.1.0
+> Zenodo: https://doi.org/10.5281/zenodo.23188391
 
 ## Overview
 
