@@ -1,0 +1,34 @@
+{
+  "start": "2026-01-01T00:00:00Z",
+  "cutoff": "2026-10-02T23:59:59Z",
+  "repositories": [
+    {
+      "repository": "Qiskit/qiskit-ibm-runtime",
+      "commit_date": "2026-10-02T12:56:58Z",
+      "commit_in_period": "c3cd1f11c5598e8556b2646e870f96c7340f2a69",
+      "evidence_url": "https://api.github.com/repos/Qiskit/qiskit-ibm-runtime/commits?since=2026-01-01T00%3A00%3A00Z&until=2026-10-02T23%3A59%3A59Z&per_page=1",
+      "verified_at": "2026-10-06T11:44:48+00:00"
+    },
+    {
+      "repository": "PennyLaneAI/pennylane-qiskit",
+      "commit_date": "2026-07-27T15:43:28Z",
+      "commit_in_period": "654357ab7907a485935959869fd4c6d42178b9ba"
+    },
+    {
+      "repository": "qiskit-community/qiskit-machine-learning",
+      "commit_date": "2026-08-18T15:24:37Z",
+      "commit_in_period": "3bdcce7e39aaca0700a7a7fcfba79230a8825a41"
+    },
+    {
+      "repository": "amazon-braket/amazon-braket-sdk-python",
+      "commit_date": "2026-09-30T16:12:57Z",
+      "commit_in_period": "fe9cb10bcd5e740bf083e89b0f9cd18629e7d1b8"
+    },
+    {
+      "repository": "unitaryfoundation/mitiq",
+      "commit_date": "2026-09-20T20:15:54Z",
+      "commit_in_period": "1a892a9783ddfe8c39d3d035613d6f3d168df9af"
+    }
+  ],
+  "note": "Four commit records already fall within the analysis period. IBM Runtime was rechecked through the GitHub API because its original latest commit followed the analysis cutoff. Repository stars remain observations from October 6."
+}

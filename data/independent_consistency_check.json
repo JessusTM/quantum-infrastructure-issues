@@ -1,0 +1,28 @@
+[
+  {
+    "repository": "amazon-braket/amazon-braket-sdk-python",
+    "issue": 1256,
+    "independent_public_api_count": 1,
+    "comment_ids": [
+      4615076455
+    ]
+  },
+  {
+    "repository": "amazon-braket/amazon-braket-sdk-python",
+    "issue": 1322,
+    "independent_public_api_count": 1,
+    "comment_ids": [
+      5145373174
+    ]
+  },
+  {
+    "repository": "Qiskit/qiskit-ibm-runtime",
+    "issue": 2777,
+    "independent_public_api_count": 3,
+    "comment_ids": [
+      4387144197,
+      4390551130,
+      4396196312
+    ]
+  }
+]

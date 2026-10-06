@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.env.*
+reproduced_results/
+resultados_locales/
+new_extraction/
+new_results/

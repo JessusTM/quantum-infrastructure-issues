@@ -1,0 +1,180 @@
+{
+  "analysis_cutoff": "2026-10-02T23:59:59Z",
+  "sampling_seed": 20261006,
+  "candidates_sha256": "612f62251381bf241fd968076572b042833a0bd0518df6c3cc9dc0b1d6f7cbdf",
+  "coding_note": "Preliminary assisted coding under a conservative infrastructure relevance criterion. Issue 1042 is excluded because an infrastructure condition is not explicit in the retained evidence. No independent review or reviewer identity is asserted.",
+  "issues": [
+    {
+      "repository": "amazon-braket/amazon-braket-sdk-python",
+      "issue_number": 1222,
+      "pertinent": "no",
+      "eligibility_reason": "El caso reporta una falla de Ruff al revisar el código, sin documentar una restricción del hardware o de una plataforma cuántica.",
+      "rq1_problem_or_constraint": "",
+      "rq2_reported_software_effect": "",
+      "rq3_information_types": "",
+      "evidence_fragments_and_locations": "body: Update ruff to 0.15.1, run ruff check src."
+    },
+    {
+      "repository": "amazon-braket/amazon-braket-sdk-python",
+      "issue_number": 1341,
+      "pertinent": "no",
+      "eligibility_reason": "El problema corresponde al tratamiento de una cadena de texto dentro del SDK. No se documenta una condición de infraestructura que lo provoque.",
+      "rq1_problem_or_constraint": "",
+      "rq2_reported_software_effect": "",
+      "rq3_information_types": "",
+      "evidence_fragments_and_locations": "body: a Python `str` is itself a `Sequence`"
+    },
+    {
+      "repository": "PennyLaneAI/pennylane-qiskit",
+      "issue_number": 685,
+      "pertinent": "yes",
+      "eligibility_reason": "El caso relaciona cambios en el transpiler de IBM con dificultades para ejecutar circuitos de PennyLane en hardware cuántico.",
+      "rq1_problem_or_constraint": "Incompatibilidad en la integración con la plataforma de ejecución",
+      "rq2_reported_software_effect": "Bloqueo en la ejecución de circuitos; adaptación de la integración",
+      "rq3_information_types": "Reporte del problema; alternativa de solución; código; evaluación de las limitaciones de una propuesta",
+      "evidence_fragments_and_locations": "body: This issue is blocking people from running PennyLane circuits on IBM Quantum hardware."
+    },
+    {
+      "repository": "PennyLaneAI/pennylane-qiskit",
+      "issue_number": 711,
+      "pertinent": "no",
+      "eligibility_reason": "Aunque se utiliza un backend real, el error reportado está en el procesamiento de muestras del plugin. No se documenta una restricción del dispositivo o del servicio.",
+      "rq1_problem_or_constraint": "",
+      "rq2_reported_software_effect": "",
+      "rq3_information_types": "",
+      "evidence_fragments_and_locations": "body: 'ClassicalShadowMP' object has no attribute 'process_samples'"
+    },
+    {
+      "repository": "qiskit-community/qiskit-machine-learning",
+      "issue_number": 1030,
+      "pertinent": "no",
+      "eligibility_reason": "Se presentan resultados de ejecución en hardware real, sin reportar un problema o una restricción de infraestructura.",
+      "rq1_problem_or_constraint": "",
+      "rq2_reported_software_effect": "",
+      "rq3_information_types": "",
+      "evidence_fragments_and_locations": "body: Results demonstrate angle encoding working correctly on real hardware"
+    },
+    {
+      "repository": "qiskit-community/qiskit-machine-learning",
+      "issue_number": 1042,
+      "pertinent": "no",
+      "eligibility_reason": "Se reporta una falla al utilizar IBM Runtime, pero no se identifica con suficiente claridad una condición de infraestructura asociada al problema. La causa específica se plantea como una hipótesis. Se excluye con el criterio conservador de este avance.",
+      "rq1_problem_or_constraint": "",
+      "rq2_reported_software_effect": "",
+      "rq3_information_types": "",
+      "evidence_fragments_and_locations": "body: The workflow fails during `PegasosQSVC.fit()` with a QPY parameter binding error"
+    },
+    {
+      "repository": "Qiskit/qiskit-ibm-runtime",
+      "issue_number": 2961,
+      "pertinent": "no",
+      "eligibility_reason": "El caso trata mejoras en las pruebas unitarias del proyecto, sin reportar problemas o restricciones de infraestructura.",
+      "rq1_problem_or_constraint": "",
+      "rq2_reported_software_effect": "",
+      "rq3_information_types": "",
+      "evidence_fragments_and_locations": "body: remove duplicate tests"
+    },
+    {
+      "repository": "Qiskit/qiskit-ibm-runtime",
+      "issue_number": 3397,
+      "pertinent": "no",
+      "eligibility_reason": "Se propone adaptar el cliente a cambios previstos de la API para dispositivos simulados, sin documentar un problema o una restricción de ejecución del hardware o de la plataforma.",
+      "rq1_problem_or_constraint": "",
+      "rq2_reported_software_effect": "",
+      "rq3_information_types": "",
+      "evidence_fragments_and_locations": "body: In an upcoming API version, adjustments will be made"
+    },
+    {
+      "repository": "unitaryfoundation/mitiq",
+      "issue_number": 3082,
+      "pertinent": "no",
+      "eligibility_reason": "Se plantea un riesgo condicional, pero la discusión cuestiona su aplicación a Mitiq y el autor retira la propuesta. No se documenta una restricción aplicable al caso estudiado con evidencia suficiente.",
+      "rq1_problem_or_constraint": "",
+      "rq2_reported_software_effect": "",
+      "rq3_information_types": "",
+      "evidence_fragments_and_locations": "comment:4996002118: But the failure mode can't reach Mitiq users as described"
+    },
+    {
+      "repository": "unitaryfoundation/mitiq",
+      "issue_number": 3121,
+      "pertinent": "no",
+      "eligibility_reason": "El error ocurre al convertir una cadena OpenQASM dentro de la librería y antes de ejecutar en infraestructura cuántica. No se documenta una restricción del hardware o de la plataforma.",
+      "rq1_problem_or_constraint": "",
+      "rq2_reported_software_effect": "",
+      "rq3_information_types": "",
+      "evidence_fragments_and_locations": "body: AttributeError: 'str' object has no attribute '__module__'"
+    }
+  ],
+  "cards": [
+    {
+      "card_id": "C01",
+      "repository": "PennyLaneAI/pennylane-qiskit",
+      "issue_number": 685,
+      "rq": "RQ1",
+      "idea": "Cambios en el transpiler de IBM dificultan la integración del plugin.",
+      "group": "Incompatibilidad en la integración con la plataforma de ejecución",
+      "evidence_location": "body",
+      "evidence_fragment": "The plugin is incompatible with recent updates to the IBM transpiler"
+    },
+    {
+      "card_id": "C02",
+      "repository": "PennyLaneAI/pennylane-qiskit",
+      "issue_number": 685,
+      "rq": "RQ2",
+      "idea": "La incompatibilidad bloquea la ejecución de circuitos de PennyLane en hardware IBM.",
+      "group": "Interrupción de la ejecución",
+      "evidence_location": "body",
+      "evidence_fragment": "This issue is blocking people from running PennyLane circuits on IBM Quantum hardware."
+    },
+    {
+      "card_id": "C03",
+      "repository": "PennyLaneAI/pennylane-qiskit",
+      "issue_number": 685,
+      "rq": "RQ2",
+      "idea": "El participante reporta una alternativa mediante conversión del circuito y uso de initial_layout.",
+      "group": "Adaptación del flujo de integración",
+      "evidence_location": "body",
+      "evidence_fragment": "passing it to the pass_manager with the initial_layout option."
+    },
+    {
+      "card_id": "C04",
+      "repository": "PennyLaneAI/pennylane-qiskit",
+      "issue_number": 685,
+      "rq": "RQ3",
+      "idea": "Se describe la incompatibilidad que motiva el issue.",
+      "group": "Reporte del problema",
+      "evidence_location": "body",
+      "evidence_fragment": "The plugin is incompatible with recent updates to the IBM transpiler"
+    },
+    {
+      "card_id": "C05",
+      "repository": "PennyLaneAI/pennylane-qiskit",
+      "issue_number": 685,
+      "rq": "RQ3",
+      "idea": "Se comunica una alternativa parcial para ejecutar el circuito.",
+      "group": "Alternativa de solución",
+      "evidence_location": "body",
+      "evidence_fragment": "I solved partially the problem converting the circuit through the qml.tape"
+    },
+    {
+      "card_id": "C06",
+      "repository": "PennyLaneAI/pennylane-qiskit",
+      "issue_number": 685,
+      "rq": "RQ3",
+      "idea": "Se comparte código para adaptar la ejecución a BackendV2.",
+      "group": "Código",
+      "evidence_location": "comment:4588361731",
+      "evidence_fragment": "class QiskitBackendV2Device(Device):"
+    },
+    {
+      "card_id": "C07",
+      "repository": "PennyLaneAI/pennylane-qiskit",
+      "issue_number": 685,
+      "rq": "RQ3",
+      "idea": "Se evalúa el alcance limitado de una solución propuesta.",
+      "group": "Evaluación de una propuesta",
+      "evidence_location": "comment:4597043825",
+      "evidence_fragment": "I don't think your code is general enough for solving the problem for any circuit."
+    }
+  ]
+}

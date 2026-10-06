@@ -1,0 +1,8 @@
+﻿card_id,repository,issue_number,rq,idea,group,evidence_location,evidence_fragment
+C01,PennyLaneAI/pennylane-qiskit,685,RQ1,Cambios en el transpiler de IBM dificultan la integración del plugin.,Incompatibilidad en la integración con la plataforma de ejecución,body,The plugin is incompatible with recent updates to the IBM transpiler
+C02,PennyLaneAI/pennylane-qiskit,685,RQ2,La incompatibilidad bloquea la ejecución de circuitos de PennyLane en hardware IBM.,Interrupción de la ejecución,body,This issue is blocking people from running PennyLane circuits on IBM Quantum hardware.
+C03,PennyLaneAI/pennylane-qiskit,685,RQ2,El participante reporta una alternativa mediante conversión del circuito y uso de initial_layout.,Adaptación del flujo de integración,body,passing it to the pass_manager with the initial_layout option.
+C04,PennyLaneAI/pennylane-qiskit,685,RQ3,Se describe la incompatibilidad que motiva el issue.,Reporte del problema,body,The plugin is incompatible with recent updates to the IBM transpiler
+C05,PennyLaneAI/pennylane-qiskit,685,RQ3,Se comunica una alternativa parcial para ejecutar el circuito.,Alternativa de solución,body,I solved partially the problem converting the circuit through the qml.tape
+C06,PennyLaneAI/pennylane-qiskit,685,RQ3,Se comparte código para adaptar la ejecución a BackendV2.,Código,comment:4588361731,class QiskitBackendV2Device(Device):
+C07,PennyLaneAI/pennylane-qiskit,685,RQ3,Se evalúa el alcance limitado de una solución propuesta.,Evaluación de una propuesta,comment:4597043825,I don't think your code is general enough for solving the problem for any circuit.

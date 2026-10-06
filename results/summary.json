@@ -1,0 +1,81 @@
+{
+  "repositories": [
+    {
+      "repository": "Qiskit/qiskit-ibm-runtime",
+      "stars_at_collection": 238,
+      "commit_date": "2026-10-02T12:56:58Z",
+      "issues_in_period": 301,
+      "comments_in_period": 235,
+      "keyword_candidates": 139,
+      "complete_candidates": 138,
+      "incomplete_issues": 1,
+      "collection_complete": false,
+      "error": ""
+    },
+    {
+      "repository": "PennyLaneAI/pennylane-qiskit",
+      "stars_at_collection": 245,
+      "commit_date": "2026-07-27T15:43:28Z",
+      "issues_in_period": 2,
+      "comments_in_period": 8,
+      "keyword_candidates": 2,
+      "complete_candidates": 2,
+      "incomplete_issues": 0,
+      "collection_complete": true,
+      "error": ""
+    },
+    {
+      "repository": "qiskit-community/qiskit-machine-learning",
+      "stars_at_collection": 1103,
+      "commit_date": "2026-08-18T15:24:37Z",
+      "issues_in_period": 13,
+      "comments_in_period": 12,
+      "keyword_candidates": 5,
+      "complete_candidates": 5,
+      "incomplete_issues": 0,
+      "collection_complete": true,
+      "error": ""
+    },
+    {
+      "repository": "amazon-braket/amazon-braket-sdk-python",
+      "stars_at_collection": 374,
+      "commit_date": "2026-09-30T16:12:57Z",
+      "issues_in_period": 35,
+      "comments_in_period": 54,
+      "keyword_candidates": 19,
+      "complete_candidates": 18,
+      "incomplete_issues": 2,
+      "collection_complete": false,
+      "error": ""
+    },
+    {
+      "repository": "unitaryfoundation/mitiq",
+      "stars_at_collection": 446,
+      "commit_date": "2026-09-20T20:15:54Z",
+      "issues_in_period": 16,
+      "comments_in_period": 41,
+      "keyword_candidates": 11,
+      "complete_candidates": 11,
+      "incomplete_issues": 0,
+      "collection_complete": true,
+      "error": ""
+    }
+  ],
+  "totals": {
+    "issues": 367,
+    "comments": 350,
+    "keyword_candidates": 176,
+    "complete_candidates": 174,
+    "incomplete_issues": 3
+  },
+  "analysis_start": "2026-01-01T00:00:00Z",
+  "analysis_cutoff": "2026-10-02T23:59:59Z",
+  "processed_at": "2026-10-06T12:11:09Z",
+  "source_collection_cutoff": "2026-10-06T09:43:57Z",
+  "keywords_are_not_classifications": true,
+  "preliminary_coding": {
+    "included": 1,
+    "excluded": 9,
+    "assistance": "AI-assisted suggestions and conservative eligibility review"
+  }
+}
